@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  justify-self: start;
+}
+.main__content {
+  max-width: 830px;
+  height: 607px;
+}
+
+.main__subtitle {
+  font-size: 54px;
+  line-height: 58px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.main__paragraph {
+  max-width: 738px;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  line-height: 34px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.main__paragraph-author {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 738px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.main__paragraph-text {
+  margin-top: 32px;
+  max-width: 722px;
+  font-size: 16px;
+  line-height: 163%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main__content {
+    max-width: 100%;
+  }
+  .main__subtitle {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .main__paragraph {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .main__paragraph-text {
+    font-size: 14px;
+  }
+}
