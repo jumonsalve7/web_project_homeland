@@ -1,21 +1,21 @@
-main {
+content {
   display: flex;
   justify-self: start;
 }
-.main__content {
+.content__content {
   max-width: 830px;
   height: auto;
   margin: 10px;
 }
 
-.main__subtitle {
+.content__subtitle {
   font-size: 54px;
   line-height: 58px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
 
-.main__paragraph {
+.content__paragraph {
   max-width: 738px;
   font-size: 1.5rem;
   font-family: "Inter", sans-serif;
@@ -24,7 +24,7 @@ main {
   padding-bottom: 0;
 }
 
-.main__paragraph-author {
+.content__paragraph-author {
   display: flex;
   justify-content: flex-end;
   max-width: 738px;
@@ -32,7 +32,7 @@ main {
   padding-top: 0;
 }
 
-.main__paragraph-text {
+.content__paragraph-text {
   margin-top: 32px;
   max-width: 722px;
   font-size: 16px;
@@ -40,27 +40,27 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-  .main {
+  .content {
     padding: auto;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .main__content {
+  .content__content {
     max-width: 100%;
     margin: 5px;
   }
-  .main__subtitle {
+  .content__subtitle {
     font-size: 32px;
     line-height: 35px;
   }
 
-  .main__paragraph {
+  .content__paragraph {
     font-size: 24px;
     line-height: 1.1;
   }
 
-  .main__paragraph-text {
+  .content__paragraph-text {
     font-size: 14px;
     line-height: 1.1;
   }
