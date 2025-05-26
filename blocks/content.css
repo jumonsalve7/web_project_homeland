@@ -1,9 +1,11 @@
 content {
   display: flex;
-  justify-self: start;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .content__content {
-  max-width: 830px;
+  max-width: 984px;
   height: auto;
   margin: 10px;
 }
