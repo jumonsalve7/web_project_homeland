@@ -3,29 +3,35 @@
   justify-items: center;
 }
 
+.cities__description{
+  max-width: 987px;
+  width: 100%;
+}
+
 .cities__images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 4fr);
   gap: 16px;
-  max-width: 1184px;
+  /* max-width: 1184px; */
 }
 
 .cities__image {
-  width: 284px;
-  height: 213px;
+  width: 100%; /* gemini */
+  height: 100%;
 }
 
 .cities__content {
   margin-top: 40px;
   max-width: 984px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto) auto;
 }
 
 .cities__content-title {
-  max-width: 460px;
+  /* max-width: 460px; */ /* gemini */
   width: 100%;
   font-size: 4.5rem;
   margin: 0;
@@ -37,6 +43,11 @@
   width: 100%;
   box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
   margin-top: 35px;
+}
+
+.cities__content-image:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .cities__author {
@@ -68,8 +79,72 @@
 .cities__content-button {
   max-width: 289px;
   min-height: 48px;
-  background: linear-gradient(to right, #0278fe, #003a7b);
+  background: linear-gradient(
+    to right,
+    rgba(2, 120, 254, 1),
+    rgba(0, 58, 123, 1)
+  );
+  cursor: pointer;
   display: grid;
   place-items: center;
   margin-top: 30px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+.cities__content-button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(2, 120, 254, 0.7),
+    rgba(0, 58, 123, 0.7)
+  );
+}
+
+@media screen and (max-width: 768px) {
+
+  .cities__description{
+    margin: 10px;
+  }
+
+  .cities__images {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;
+    column-gap: 16px;
+  }
+
+  .cities__image {
+    max-width: 340px;
+
+  }
+
+  .cities__content-title {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .cities__content-description {
+    font-size: 16px;
+  }
+
+  .cities__content-image{
+    max-width: 340px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cities__images {
+    display: grid;
+    justify-items: center;    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cities__description {
+    display: grid;
+    justify-items: center;    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
