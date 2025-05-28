@@ -81,11 +81,7 @@
 .cities__content-button {
   max-width: 289px;
   min-height: 48px;
-  background: linear-gradient(
-    to right,
-    rgba(2, 120, 254, 1),
-    rgba(0, 58, 123, 1)
-  );
+  background: linear-gradient(to right,rgba(2, 120, 254, 1),rgba(0, 58, 123, 1));
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -95,11 +91,7 @@
 }
 
 .cities__content-button:hover {
-  background: linear-gradient(
-    to right,
-    rgba(2, 120, 254, 0.7),
-    rgba(0, 58, 123, 0.7)
-  );
+  background: linear-gradient(to right,rgba(2, 120, 254, 0.7), rgba(0, 58, 123, 0.7));
 }
 
 @media screen and (max-width: 768px) {
