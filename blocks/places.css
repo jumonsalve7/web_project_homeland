@@ -72,7 +72,7 @@
 }
 
 .places__content-button:hover {
-  background: linear-gradient(90deg, #0278fe40 0%, #003a7b 99.98%);
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
   box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.4);
 }
 
